@@ -17,6 +17,19 @@
 // Input: nums = [3, 3], target = 6
 // Output: [0, 1]
 
+// this solution works but it is not efficient because it uses a nested loop, which means it checks every possible pair of numbers in the array. This can be slow for large arrays. this solution has a time complexity of O(n^2), which means it takes longer as the array gets bigger. 
+// function twoSum(arr, target){
+//     for (let i = 0; i < arr.length; i++){
+//         for(let j = i + 1; j<arr.length; j++){
+//             if(arr[i] + arr[j] ===target ){
+                
+//              return [i, j]
+//             }
+//         }
+//     }
+//     return []
+// }
+
 function twoSum(nums, target) {
     const numMap = new Map(); // Create a map to remember numbers and where we saw them
 
